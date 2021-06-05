@@ -75,7 +75,7 @@ hr {
   width: 100%;
   height: 550px;
   background: url(/img/showcase.jpg) no-repeat center center/cover;
-  padding-bottom: 50px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,7 +134,7 @@ hr {
   text-decoration: underline;
 }
 
-/* Cards banner one */
+/* Cards banner one and two */
 
 .cards-banner-one {
   width: 100%;
@@ -164,4 +164,85 @@ hr {
   background-color: #040109;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%232ddf0e' fill-opacity='0.1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   margin-bottom: 40px;
+}
+
+/* Social */
+
+.social {
+  margin: 50px;
+}
+
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links i {
+  font-size: 3rem;
+}
+
+/* Footer Links */
+
+.footer-links {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container ul {
+  margin: 0 auto;
+}
+
+.footer-container ul li {
+  line-height: 2.8;
+}
+
+.footer {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+  }
+
+  .news-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cards-banner-one .content,
+  .cards-banner-two .content {
+    width: 80%;
+  }
+  .footer-links .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
